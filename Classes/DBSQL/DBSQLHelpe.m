@@ -62,12 +62,12 @@ static DBSQLHelpe *instance = nil;
 
     NSString *DBName = [NSString stringWithFormat:@"%@.db",arr.lastObject];
 
-//    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES) firstObject];
-//    NSString *filePath = [doc stringByAppendingPathComponent:DBName];
-//
-    NSString *path = @"/Users/zhangxiaoye/Desktop/";
+    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES) firstObject];
+    NSString *filePath = [doc stringByAppendingPathComponent:DBName];
 
-    NSString *filePath = [path stringByAppendingString:DBName];
+//    NSString *path = @"/Users/zhangxiaoye/Desktop/";
+//
+//    NSString *filePath = [path stringByAppendingString:DBName];
     
     NSLog(@"%@",filePath);
     //创建数据库
